@@ -23,3 +23,5 @@ Deployed on [Netlify/Vercel] (add your link here)
 
 🔹 Notes
 This project was inspired by a YouTube tutorial. I built it to practice working with APIs, async/await, and DOM manipulation, and then customized it with my own design and improvements.
+
+![Image](https://github.com/user-attachments/assets/22f96c54-ad6b-43b9-8e89-4242c8392910)
