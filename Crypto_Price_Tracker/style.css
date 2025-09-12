@@ -1,0 +1,187 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #232343);
+    color: #fff;
+}
+
+#app {
+    max-width: 900px;
+    margin: 20px auto;
+    margin-top: -10px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* --- Search Bar --- */
+#searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 8px 15px;
+    width: 80%;
+    max-width: 400px;
+}
+
+#searchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#searchIcon {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* --- Coins Container --- */
+#cryptoPrice {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row */
+    gap: 20px;
+    /* space between cards */
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Suggestions dropdown */
+#suggestions {
+    position: absolute;
+    background: #1e1e2f;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 110px;
+    z-index: 1000;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+}
+
+/* Each suggestion item */
+.suggestion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.suggestion:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Coin logo */
+.suggestion img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Coin Card */
+.coin-card {
+    background: #2a2a3d;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px auto;
+    text-align: left;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.coin-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header (Image + Name + Symbol) */
+.coin-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.coin-header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.coin-info h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.coin-info h4 {
+    margin: 0;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+/* Price */
+.coin-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #4cafef;
+}
+
+/* Percentage change */
+.coin-change {
+    margin: 0 0 12px;
+    font-size: 1rem;
+}
+
+/* Stats grid */
+.coin-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 per row */
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}
+
+.coin-stats p {
+    margin: 0;
+    color: #ddd;
+}
+
+.coin-stats span {
+    font-weight: bold;
+    color: #fff;
+}
